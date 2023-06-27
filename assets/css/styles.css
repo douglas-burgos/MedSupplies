@@ -1,0 +1,367 @@
+/* font-family: 'Noto Sans', sans-serif; */
+
+:root {
+    --clr-primary: #334c7d;
+    --clr-secondary: #4d93e9;
+    --cl-tertiary: #2d2b55;
+    --cl-tertiary-02: #1e3563;
+    /* --clr-grey: #808dad; */
+    --clr-white: #fff;
+    /* --secondary-02: rgba(235, 74, 74, 0.1);
+    --tertiary-02: rgba(23, 31, 56, 0.5); */
+    --ff-primary: 'Noto Sans', sans-serif;
+    --transition: all 0.3s linear;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+    scroll-behavior: smooth;
+}
+
+/* section[id] {
+    scroll-margin: 100px;
+} */
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+* {
+    /* border: 1px solid red; */
+}
+
+body {
+    font-family: var(--ff-primary);
+    font-size: 1.6rem;
+    line-height: 2;
+    /* background-color: var(--clr-primary); */
+}
+
+/*** Globales ***/
+
+h1,
+h2,
+h3 {
+    margin: 0 0 5rem 0;
+}
+
+h1 {
+    font-size: 4.5rem;
+    color: var(--clr-primary);
+}
+
+h2 {
+    font-size: 3.4rem;
+    color: var(--clr-primary);
+}
+
+h3 {
+    font-size: 2.4rem;
+    color: var(--clr-primary);
+}
+
+p {
+    font-size: 1.7rem;
+    color: var(--clr-grey);
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+.contenedor {
+    /* max-width: 576px; */
+    /* margin: 0 auto; */
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.btn {
+    background-color: var(--clr-secondary);
+    box-sizing: border-box;
+    appearance: none;
+    border: 2px solid var(--clr-secondary);
+    border-radius: 0.6em;
+    color: var(--clr-white);
+    cursor: pointer;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.5rem 3rem;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s all ease-in-out !important;
+}
+
+.btn:hover {
+    border: 2px solid var(--clr-primary);
+    background-color: var(--cl-tertiary);
+    outline: 0;
+    /* box-shadow: 0 0 40px 40px var(--clr-secondary) inset; */
+}
+
+/** Utilidades **/
+.text-center {
+    text-align: center;
+}
+
+
+
+/****************** Header ******************/
+/********************************************/
+/********************************************/
+
+section{
+    /* position: relative; */
+    /* width: 100%; */
+}
+
+.header{
+    /* width: 100vw; */
+}
+
+.header-contenedor {
+    /* width: 100%; */
+    
+}
+
+.header-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.header-logo-enlace h2{
+    font-weight: bold;
+    letter-spacing: 0.7rem;
+    color: var(--clr-primary);
+    /* border: 1px solid red; */
+}
+
+.header-logo-enlace h2 span{
+    color: var(--clr-secondary);
+}
+
+.navbar-header {
+    text-align: center;
+}
+
+.navbar-header ul{
+    padding-left: 0;
+}
+
+
+/****************** Hero ********************/
+/********************************************/
+/********************************************/
+
+.hero {
+    background-image: url("../img/1-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin-bottom: 10rem;
+}
+
+.hero-contenedor {
+    background: rgba(51, 76, 125, 0.5);
+    height: 100%;
+    
+}
+
+.hero-info {
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.hero-text {
+    padding: 2rem;
+}
+
+.hero-text h1 {
+    font-size: 5rem;
+    color: white;
+    margin: 0rem;
+    margin-bottom: 3rem;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hero-text p {
+    color: white;
+    margin: 0;
+    margin-bottom: 1.5rem;
+}
+
+/****************** Products ****************/
+/********************************************/
+/********************************************/
+
+.container-products {
+	/* max-width: 960px; */
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+    margin-bottom: 10rem;
+}
+
+.title-products{
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.product {
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	margin: 20px;
+	padding: 20px;
+	width: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product img {
+	margin-bottom: 10px;
+    min-width: 300px;
+    min-height: 300px;
+}
+
+.product h3 {
+	margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.product p {
+    color: var(--clr-primary);
+	margin: 10px 0;
+}
+
+.product button {
+	background-color: var(--clr-primary);
+	border: none;
+	color: #fff;
+	padding: 10px 20px;
+	font-size: 16px;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.product button:hover {
+	background-color: var(--clr-secondary);
+}
+
+/****************** Beneficios **************/
+/********************************************/
+/********************************************/
+
+.beneficios {
+    margin-bottom: 10rem;
+}
+
+.container-beneficios {
+    background-color: var(--clr-primary);
+    padding: 1rem;
+}
+
+.beneficio {
+    padding: 2rem;
+    margin: 2rem;
+    border: 1px dotted var(--clr-white);
+    display: flex;
+}
+
+.info-beneficios {
+    margin-left: 2rem;
+}
+
+.info-beneficios h3, p{
+    color: var(--clr-white);
+}
+
+.info-beneficios h3{
+    margin-bottom: 0;
+}
+
+.icon {
+    font-size: 50px;
+    color: var(--clr-white);
+}
+
+
+/****************** Footer ******************/
+/********************************************/
+/********************************************/
+
+footer{
+    margin-bottom: 0;
+}
+
+.contenedor-footer {
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+}
+
+.contenedor-footer h3{
+    margin-bottom: 1rem;
+    color: var(--clr-white);
+}
+
+.images-footer {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    margin-bottom: 4rem;
+    
+}
+
+.images-footer img {
+    display: inline;
+    flex: 0 0 auto; /* Asegura que las imágenes mantengan su tamaño original */
+    margin-right: 0px; /* Espacio entre las imágenes, ajusta según sea necesario */
+}
+
+.info-footer {
+    padding: 2rem;
+}
+
+.navbar-footer ul{
+    padding-left: 0;
+    
+}
+
+.navbar-footer ul li a{
+    color: var(--clr-white);    
+}
+
+.created-by-footer {
+    text-align: center;
+    background-color: var(--cl-tertiary-02);
+}
+
+.reserved {
+    margin-bottom: 0;
+}
+
